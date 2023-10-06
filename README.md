@@ -1,18 +1,20 @@
-# Avax-Eth Assignment
+# Avax-Eth Assignment 1
 
-Going to use deposit(),withdraw(),totalSupply,balanceOftoken functions using local network subnet.
+Using deposit(),withdraw(),totalSupply,balanceOftoken functions using avalanche subnet.
 
 ## Description
 
-Contract for creating a seperate wallet/vault for every player and letting player do some things with it.
+Contract for creating a seperate wallet/vault for every user and user will do certain operations.
 
 ## Getting Started
 
 ## Initialize
 
-1. To get started, first pick a name for your Subnet.
+1. Enter your subnet name with this command.
 
 ``avalanche subnet create mySubnet``
+
+Then select these properties as is
 
 Select ``SubnetEVM``
 Select ``Use latest version``
@@ -20,7 +22,7 @@ Select ``Low disk use / Low Throughput 1.5 mil gas/s (C-Chain's setting)``
 Select ``Airdrop 1 million tokens to the default address (do not use in production)``
 select ``No``
 
- The command prints ``Successfully created subnet configuration``
+ Then it will output ``Successfully created subnet configuration``
 
 To deploy your Subnet, run
 
@@ -28,14 +30,14 @@ To deploy your Subnet, run
  
  Next, select ``Local Network``
  
-Now you will get your configurations just put them in your metamask wallet add manual network.
+Now you will need to create a network and your private key account in the metamask with the displayed configurations.
 
-and then execute every thing with that configuration of metamask in your remix.
+and then execute below things
 
 
 ### Executing program
 
-1. You need to deploy the ERC20.sol first.
-2. Then, you need to deploy the Vault.sol contract after that but give it the address of already deployed contract in the above step.
-3. Now in the first contract you need to mint some tokens and approve them to be transfered to the valut contract by giving it both the addresses and the amount.
+1. Deploy ERC20.sol first.
+2. Then, Deploy the Vault.sol contract with the address of already deployed ERC20 contract.
+3. Now mint some tokens and approve them to be transfered to the valut contract by giving it both the addresses and the amount.
 4. Now, you can call the deposit and wothdraw functions of the main Vault contract and check them as stated in the contract.
